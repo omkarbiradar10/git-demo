@@ -1,0 +1,70 @@
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 20px auto;
+  position: relative;  /* Changed from absolute to relative */
+  top: 0;  /* Removes the absolute positioning */
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  margin-right: 5px;
+}
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  margin: auto;
+  padding: auto;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.list{
+  margin-top: 20px;  /* Space between the input section and task items */
+  max-width: 500px;
+  margin: 0 auto; 
+}
+.item{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
